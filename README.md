@@ -4,7 +4,7 @@ A template to create a Mbed OS application.
 
 ## Requirements
 
-Install `cookiecutter` command line:
+Install `cookiecutter` from the command line:
 
 ```shell
 pip install --user cookiecutter
