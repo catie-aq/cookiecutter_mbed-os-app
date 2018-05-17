@@ -1,6 +1,6 @@
-# cookiecutter-mbed-os-app-generated
+# Cookiecutter Mbed OS Application
 
-A template to create a Mbed OS application.
+[Cookiecutter](https://github.com/audreyr/cookiecutter) template for a Mbed OS application.
 
 ## Requirements
 
