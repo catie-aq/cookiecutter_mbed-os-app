@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, {{cookiecutter.copyright_holder}}
+ * Copyright (c) {{cookiecutter.copyright_year}}, {{cookiecutter.copyright_holder}}
  * SPDX-License-Identifier: Apache-2.0
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,5 +1,7 @@
 # {{cookiecutter.project_name}}
 
+{{cookiecutter.project_short_description}}
+
 ## Requirements
 
 *List {{cookiecutter.project_name}} requirements here*
@@ -9,15 +11,15 @@
 To clone **and** deploy the project in one command, use `mbed import` and skip to
 the target and toolchain definition:
 
-    mbed import {{cookiecutter.git_url}} "{{cookiecutter.project_name|lower}}"
+    mbed import {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
 
 Alternatively:
 
-* Clone to "{{cookiecutter.project_name|lower}}" and enter it:
+* Clone to "{{cookiecutter.project_slug}}" and enter it:
 
     ```sh
-    git clone {{cookiecutter.git_url}} "{{cookiecutter.project_name|lower}}"
-    cd "{{cookiecutter.project_name|lower}}"
+    git clone {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
+    cd {{cookiecutter.project_slug}}
     ```
 
 * Create an empty Mbed configuration file, otherwise Mbed CLI commands won't work:
@@ -65,6 +67,6 @@ Alternatively:
   J-Link debug probe:
 
     ```sh
-    python dist/program.py STM32L496RG "BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_name|lower}}.elf"
+    python dist/program.py STM32L496RG BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_slug}}.elf
     ```
 

@@ -1,5 +1,8 @@
 {
-    "project_name": "mbed-os-app",
+    "project_name": "Name of the project",
+    "project_short_description": "A short description of the project",
     "copyright_holder": "CATIE",
-    "git_url": "https://gitlab.com/catie_6tron/mbed-os-app.git"
+    "copyright_year": "2018",
+    "project_slug": "{{ cookiecutter.project_name.lower().strip().replace(' ', '-') }}",
+    "git_url": "https://gitlab.com/catie_6tron/{{cookiecutter.project_slug}}.git"
 }
