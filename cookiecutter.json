@@ -2,8 +2,9 @@
     "project_name": "Name of the project",
     "project_short_description": "A short description of the project",
     "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+    "project_namespace": "catie_6tron",
+    "git_url": "https://gitlab.com/{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}.git",
     "copyright_holder": "CATIE",
     "copyright_year": "{% now 'utc', '%Y' %}",
-    "git_url": "https://gitlab.com/catie_6tron/{{cookiecutter.project_slug}}.git",
     "_extensions": ["jinja2_time.TimeExtension"]
 }

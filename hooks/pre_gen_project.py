@@ -3,7 +3,7 @@ import sys
 
 
 def check_project_slug():
-    PROJECT_SLUG_REGEX = r"^[_a-zA-Z][_a-zA-Z0-9]+$"
+    PROJECT_SLUG_REGEX = r"^[_a-zA-Z][-_a-zA-Z0-9]+$"
 
     project_slug = "{{ cookiecutter.project_slug }}"
 
