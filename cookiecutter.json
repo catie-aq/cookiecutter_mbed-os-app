@@ -1,6 +1,7 @@
 {
     "project_name": "Name of the project",
     "project_short_description": "A short description of the project",
+    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
     "copyright_holder": "CATIE",
     "copyright_year": "2018",
     "project_slug": "{{ cookiecutter.project_name.lower().strip().replace(' ', '-') }}",
