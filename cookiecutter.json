@@ -6,5 +6,7 @@
     "git_url": "https://gitlab.com/{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}.git",
     "copyright_holder": "CATIE",
     "copyright_year": "{% now 'utc', '%Y' %}",
+    "target": "ZEST_CORE_STM32L496RG",
+    "toolchain": "GCC_ARM",
     "_extensions": ["jinja2_time.TimeExtension"]
 }

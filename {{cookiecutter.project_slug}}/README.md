@@ -22,20 +22,6 @@ Alternatively:
     cd {{cookiecutter.project_slug}}
     ```
 
-* Create an empty Mbed configuration file, otherwise Mbed CLI commands won't work:
-
-    On Linux/macOS:
-
-    ```sh
-    touch .mbed on Linux/macOS
-    ```
-
-    Or on Windows:
-
-    ```sh
-    echo.> .mbed
-    ```
-
 * Deploy Mbed OS with:
 
     ```sh

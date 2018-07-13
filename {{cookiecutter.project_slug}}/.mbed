@@ -1,0 +1,2 @@
+TARGET={{cookiecutter.target}}
+TOOLCHAIN={{cookiecutter.toolchain}}
