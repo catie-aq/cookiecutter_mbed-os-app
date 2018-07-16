@@ -13,9 +13,8 @@ pip install --user cookiecutter
 
 ## Usage
 
-Generate a new Mbed OS application from template (replace `username` by your
-GitLab username):
+Generate a new Mbed OS application from template:
 
 ```
-cookiecutter https://username@gitlab.com/b_perraudin_catie/cookiecutter-mbed-os-app
+cookiecutter gl:catie_6tron/cookiecutter-mbed-os-app
 ```
