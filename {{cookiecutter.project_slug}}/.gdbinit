@@ -8,14 +8,15 @@
 #
 #     arm-none-eabi-gdb PATH/TO/ELF_FILE
 
-# Connect to JLinkGdbServer
+# Load program into target
 target remote localhost:2331
-
-# Flash target
 monitor reset
 load
+disconnect
 
-# Break on main
+# Restart target and break at main()
+target remote localhost:2331
+monitor reset
 break main
 continue
 
