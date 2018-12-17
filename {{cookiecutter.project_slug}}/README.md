@@ -41,7 +41,7 @@ Alternatively:
     mbed export -i eclipse_6tron
     ```
 
-## Compiling and programming without IDE
+## Compiling and programming from command line
 
 * Compile the project:
 
