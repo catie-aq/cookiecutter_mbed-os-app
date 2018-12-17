@@ -56,3 +56,15 @@ Alternatively:
     python dist/program.py STM32L496RG BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_slug}}.elf
     ```
 
+* Debug on the target device (eg. `STM32L496RG` for the Zest_Core_STM32L496RG) with a
+J-Link debug probe. First, start the GDB server:
+
+  ```shell
+  JLinkGDBServer -device STM32L496RG
+  ```
+
+  Then start the debugger:
+
+  ```shell
+  arm-none-eabi-gdb BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_slug}}.elf  
+  ```
