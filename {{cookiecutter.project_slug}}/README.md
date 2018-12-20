@@ -69,7 +69,7 @@ Alternatively:
   arm-none-eabi-gdb BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_slug}}.elf  
   ```
 
-  *Note:* You may have to adjust your [GDB auto-loading safe path](https://sourceware.org/gdb/onlinedocs/gdb/Auto_002dloading-safe-path.html#Auto_002dloading-safe-path) 
+  *Note:* You may have to adjust your [GDB auto-loading safe path](https://sourceware.org/gdb/onlinedocs/gdb/Auto_002dloading-safe-path.html#Auto_002dloading-safe-path)
   or disable it completely by adding a .gdbinit file in your $HOME folder containing:
 
   ```conf
