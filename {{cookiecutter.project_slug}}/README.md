@@ -57,14 +57,21 @@ Alternatively:
   ```
 
 * Debug on the target device (eg. `STM32L496RG` for the Zest_Core_STM32L496RG) with a
-J-Link debug probe. First, start the GDB server:
+  J-Link debug probe. First, start the GDB server:
 
   ```shell
   JLinkGDBServer -device STM32L496RG
   ```
 
-  Then start the debugger:
+  Then, in another terminal, start the debugger:
 
   ```shell
   arm-none-eabi-gdb BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_slug}}.elf  
+  ```
+
+  *Note:* You may have to adjust your [GDB auto-loading safe path](https://sourceware.org/gdb/onlinedocs/gdb/Auto_002dloading-safe-path.html#Auto_002dloading-safe-path) 
+  or disable it completely by adding a .gdbinit file in your $HOME folder containing:
+
+  ```conf
+  set autoload safe-path /
   ```
