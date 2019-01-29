@@ -8,5 +8,6 @@
     "copyright_year": "{% now 'utc', '%Y' %}",
     "target": "ZEST_CORE_STM32L496RG",
     "toolchain": "GCC_ARM",
+    "create_repository": [true, false],
     "_extensions": ["jinja2_time.TimeExtension"]
 }
