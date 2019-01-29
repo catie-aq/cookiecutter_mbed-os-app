@@ -26,3 +26,5 @@ cookiecutter gl:catie_6tron/cookiecutter-mbed-os-app
 - `copyright_year`: copyright year used in headers
 - `target`: default Mbed OS target
 - `toolchain`: default Mbed OS toolchain
+- `create_repository`: if true, creates a Git repository, adds all files and makes first
+  commit
