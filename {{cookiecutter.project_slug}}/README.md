@@ -1,13 +1,19 @@
 # {{cookiecutter.project_name}}
-
 {{cookiecutter.project_short_description}}
 
 ## Requirements
+### Hardware requirements
+The following boards are required:
 
-*List {{cookiecutter.project_name}} requirements here*
+- *List {{cookiecutter.project_name}} hardware requirements here*
+
+### Software requirements
+{{cookiecutter.project_name}} makes use of the following libraries (automatically imported
+by `mbed deploy` or `mbed import`):
+
+- *List {{cookiecutter.project_name}} software requirements here*
 
 ## Usage
-
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
 target and toolchain definition:
 
@@ -18,14 +24,12 @@ mbed import {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
 Alternatively:
 
 - Clone to "{{cookiecutter.project_slug}}" and enter it:
-
   ```shell
   git clone {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
   cd {{cookiecutter.project_slug}}
   ```
 
 - Create an empty Mbed CLI configuration file:
-
   - On Linux/macOS:
     ```shell
     touch .mbed
@@ -37,7 +41,6 @@ Alternatively:
     ```
 
 - Deploy software requirements with:
-
   ```shell
   mbed deploy
   ```
@@ -56,7 +59,6 @@ mbed export -i eclipse_6tron
 ```
 
 ## Working from command line
-
 Compile the project:
 
 ```shell
@@ -74,13 +76,11 @@ Debug on the target device (eg. `STM32L496RG` for the Zest_Core_STM32L496RG) wit
 J-Link debug probe.
 
 - First, start the GDB server:
-
   ```shell
   JLinkGDBServer -device STM32L496RG
   ```
 
 - Then, in another terminal, start the debugger:
-
   ```shell
   arm-none-eabi-gdb BUILD/ZEST_CORE_STM32L496RG/GCC_ARM/{{cookiecutter.project_slug}}.elf
   ```
