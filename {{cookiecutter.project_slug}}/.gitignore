@@ -4,4 +4,3 @@ projectfiles
 *.py*
 
 # Do NOT ignore files below
-!dist/program.py

@@ -54,9 +54,9 @@ mbed compile
 ```
 
 Program the target device (eg. `STM32L4A6RG` for the Zest_Core_STM32L4A6RG) with a J-Link
-debug probe:
+debug probe and [`sixtron_flash`](https://gitlab.com/catie_6tron/6tron-flash) tool:
 ```shell
-python dist/program.py STM32L4A6RG BUILD/ZEST_CORE_STM32L4A6RG/GCC_ARM/{{cookiecutter.project_slug}}.elf
+sixtron_flash STM32L4A6RG BUILD/ZEST_CORE_STM32L4A6RG/GCC_ARM/{{cookiecutter.project_slug}}.elf
 ```
 
 Debug on the target device (eg. `STM32L4A6RG` for the Zest_Core_STM32L4A6RG) with a
