@@ -1,2 +1,2 @@
-TARGET={{cookiecutter.target}}
-TOOLCHAIN={{cookiecutter.toolchain}}
+TARGET={{ cookiecutter.mbed_os_target if cookiecutter.mbed_os_target != "YOUR_MBED_OS_TARGET" else "" }}
+TOOLCHAIN={{ cookiecutter.toolchain }}

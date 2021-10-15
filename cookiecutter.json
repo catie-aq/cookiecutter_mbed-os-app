@@ -1,13 +1,30 @@
 {
-    "project_name": "Name of the project",
-    "project_short_description": "A short description of the project",
-    "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
-    "project_namespace": "catie_6tron",
-    "git_url": "https://gitlab.com/{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}.git",
-    "copyright_holder": "CATIE",
-    "copyright_year": "{% now 'utc', '%Y' %}",
-    "target": "ZEST_CORE_STM32L496RG",
-    "toolchain": "GCC_ARM",
-    "create_repository": [true, false],
-    "_extensions": ["jinja2_time.TimeExtension"]
+   "project_name": "Name of the project",
+   "project_short_description": "A short description of the project.",
+   "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+   "project_namespace": "catie_6tron",
+   "git_url": "https://gitlab.com/{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}.git",
+   "copyright_holder": "CATIE",
+   "copyright_year": "{% now 'utc', '%Y' %}",
+   "board": [
+      "Zest_Core_STM32L4A6RG",
+      "Z_Environment",
+      "Z_Motion",
+      "Zest_Core_MTXDOT",
+      "Zest_Core_STM32G474VE",
+      "Zest_Core_STM32H753ZI",
+      "ZEST_CORE_STM32H753ZI",
+      "Zest_Core_STM32L496RG",
+      "Zest_Core_STM32L496ZG",
+      "Zest_Core_STM32L562VE",
+      "Other"
+   ],
+   "toolchain": "GCC_ARM",
+   "create_repository": [
+      true,
+      false
+   ],
+   "_extensions": [
+      "jinja2_time.TimeExtension"
+   ]
 }
