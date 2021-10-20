@@ -25,6 +25,9 @@ def remove_file(filepath):
 
 
 def main():
+    if "{{ cookiecutter.custom_target }}" == "None":
+        remove_file("{{ cookiecutter.custom_target_repo }}.lib")
+
     if {{ cookiecutter.create_repository }}:
         create_repository()
 
