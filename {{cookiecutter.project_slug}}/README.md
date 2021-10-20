@@ -36,10 +36,20 @@ Alternatively:
   mbed config root .
   ```
 
+{% if cookiecutter.custom_target_repo is defined -%}
+- Clone custom target {{cookiecutter.board}} repository:
+  ```shell
+  git clone {{cookiecutter.custom_target_repo_url}}
+  ```
+
+{% endif -%}
 Define your target and toolchain:
 ```shell
-mbed target {{ cookiecutter.mbed_os_target }}
-mbed toolchain {{ cookiecutter.toolchain }}
+{% if cookiecutter.custom_target_repo is defined -%}
+cp {{cookiecutter.custom_target_repo}}/custom_targets.json .
+{% endif -%}
+mbed target {{cookiecutter.mbed_os_target}}
+mbed toolchain {{cookiecutter.toolchain}}
 ```
 
 Compile the project:
@@ -50,7 +60,7 @@ mbed compile
 Program the target device with a Segger J-Link debug probe and
 [`sixtron_flash`](https://gitlab.com/catie_6tron/6tron-flash) tool:
 ```shell
-sixtron_flash {{ cookiecutter.jlink_device }} BUILD/{{ cookiecutter.mbed_os_target }}/{{ cookiecutter.toolchain}}/{{cookiecutter.project_slug}}.elf
+sixtron_flash {{cookiecutter.jlink_device}} BUILD/{{cookiecutter.mbed_os_target}}/{{cookiecutter.toolchain}}/{{cookiecutter.project_slug}}.elf
 ```
 
 Debug on the target device with the probe and Segger
