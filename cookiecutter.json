@@ -19,6 +19,7 @@
       "Zest_Core_STM32L562VE",
       "Other"
    ],
+   "mbed_os_version": "latest",
    "toolchain": "GCC_ARM",
    "create_repository": [
       true,
