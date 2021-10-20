@@ -74,6 +74,8 @@ def check_board():
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L562VE" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l562ve" }) }}
     {% else %}
+        {{ cookiecutter.update({ "custom_target_repo": "YOUR_CUSTOM_TARGET_REPO" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/your-custom-target-repo.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "YOUR_MBED_OS_TARGET" }) }}
         {{ cookiecutter.update({ "jlink_device": "YOUR_JLINK_DEVICE" }) }}
     {% endif %}
