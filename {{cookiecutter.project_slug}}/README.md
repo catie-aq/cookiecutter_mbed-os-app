@@ -36,10 +36,20 @@ Alternatively:
   mbed config root .
   ```
 
-Define your target (eg. `ZEST_CORE_STM32L4A6RG`) and toolchain:
+{% if cookiecutter.custom_target_repo is defined -%}
+- Clone custom target {{cookiecutter.board}} repository:
+  ```shell
+  git clone {{cookiecutter.custom_target_repo_url}}
+  ```
+
+{% endif -%}
+Define your target and toolchain:
 ```shell
-mbed target ZEST_CORE_STM32L4A6RG
-mbed toolchain GCC_ARM
+{% if cookiecutter.custom_target_repo is defined -%}
+cp {{cookiecutter.custom_target_repo}}/custom_targets.json .
+{% endif -%}
+mbed target {{cookiecutter.mbed_os_target}}
+mbed toolchain {{cookiecutter.toolchain}}
 ```
 
 Compile the project:
@@ -47,12 +57,12 @@ Compile the project:
 mbed compile
 ```
 
-Program the target device (eg. `STM32L4A6RG` for the Zest_Core_STM32L4A6RG) with a J-Link
-debug probe and [`sixtron_flash`](https://gitlab.com/catie_6tron/6tron-flash) tool:
+Program the target device with a Segger J-Link debug probe and
+[`sixtron_flash`](https://gitlab.com/catie_6tron/6tron-flash) tool:
 ```shell
-sixtron_flash STM32L4A6RG BUILD/ZEST_CORE_STM32L4A6RG/GCC_ARM/{{cookiecutter.project_slug}}.elf
+sixtron_flash {{cookiecutter.jlink_device}} BUILD/{{cookiecutter.mbed_os_target}}/{{cookiecutter.toolchain}}/{{cookiecutter.project_slug}}.elf
 ```
 
-Debug on the target device with a debug probe, eg. Segger J-Link and
+Debug on the target device with the probe and Segger
 [Ozone](https://www.segger.com/products/development-tools/ozone-j-link-debugger)
 software.
