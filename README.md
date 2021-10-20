@@ -24,6 +24,7 @@ cookiecutter gl:catie_6tron/cookiecutter-mbed-os-app
 - `git_url`: GitLab URL as in https://gitlab.com/project_namespace/project_slug.git
 - `copyright_holder`: copyright holder used in headers
 - `copyright_year`: copyright year used in headers
+- `open_source_license`: ["Apache Software License 2.0", "Not open source"]
 - `board`: default 6TRON board
 - `toolchain`: default Mbed OS toolchain
 - `create_repository`: if true, creates a Git repository, adds all files and makes first
