@@ -12,7 +12,7 @@ pip install --user cookiecutter
 ## Usage
 Generate a new Mbed OS application from template:
 
-```
+```shell
 cookiecutter gl:catie_6tron/cookiecutter-mbed-os-app
 ```
 
@@ -24,8 +24,8 @@ cookiecutter gl:catie_6tron/cookiecutter-mbed-os-app
 - `git_url`: GitLab URL as in https://gitlab.com/project_namespace/project_slug.git
 - `copyright_holder`: copyright holder used in headers
 - `copyright_year`: copyright year used in headers
-- `open_source_license`: default license used in the project
-- `board`: default 6TRON board
+- `open_source_license`: project license
+- `custom_target`: select default 6TRON custom target
 - `toolchain`: default Mbed OS toolchain
 - `create_repository`: if true, creates a Git repository, adds all files and makes first
   commit

@@ -7,8 +7,8 @@
    "copyright_holder": "CATIE",
    "copyright_year": "{% now 'utc', '%Y' %}",
    "open_source_license": ["Apache Software License 2.0", "Not open source"],
-   "board": [
-      "Zest_Core_STM32L4A6RG",
+   "custom_target": [
+      "None",
       "Z_Environment",
       "Z_Motion",
       "Zest_Core_MTXDOT",
@@ -17,8 +17,8 @@
       "Zest_Core_STM32H753ZI",
       "Zest_Core_STM32L496RG",
       "Zest_Core_STM32L496ZG",
-      "Zest_Core_STM32L562VE",
-      "Other"
+      "Zest_Core_STM32L4A6RG",
+      "Zest_Core_STM32L562VE"
    ],
    "toolchain": "GCC_ARM",
    "create_repository": [

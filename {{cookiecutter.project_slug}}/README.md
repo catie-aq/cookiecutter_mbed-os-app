@@ -12,8 +12,13 @@ imported by `mbed deploy` or `mbed import`):
 - *List {{cookiecutter.project_name}} software requirements here*
 
 ## Usage
+{% if cookiecutter.custom_target == "None" -%}
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
 target and toolchain definition:
+{% else -%}
+To clone **and** deploy the project in one command, use `mbed import` and skip to the
+compiling instructions:
+{% endif -%}
 ```shell
 mbed import {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
 ```
@@ -31,26 +36,25 @@ Alternatively:
   mbed deploy
   ```
 
+{% if cookiecutter.custom_target == "None" -%}
 - Set Mbed project root path:
   ```shell
   mbed config root .
   ```
 
-{% if cookiecutter.custom_target_repo is defined -%}
-- Clone custom target {{cookiecutter.board}} repository:
+- Clone custom target repository if necessary:
   ```shell
-  git clone {{cookiecutter.custom_target_repo_url}}
+  git clone YOUR_CUSTOM_TARGET_REPOSITORY your-custom-target
   ```
 
-{% endif -%}
 Define your target and toolchain:
 ```shell
-{% if cookiecutter.custom_target_repo is defined -%}
-cp {{cookiecutter.custom_target_repo}}/custom_targets.json .
-{% endif -%}
+cp your-custom-target/custom_targets.json . # In case of custom target
 mbed target {{cookiecutter.mbed_os_target}}
 mbed toolchain {{cookiecutter.toolchain}}
 ```
+
+{% endif -%}
 
 Compile the project:
 ```shell
