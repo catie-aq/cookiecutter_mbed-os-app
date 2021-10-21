@@ -17,7 +17,7 @@ To clone **and** deploy the project in one command, use `mbed import` and skip t
 target and toolchain definition:
 {% else -%}
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
-compiling instructions:
+target enabling instructions:
 {% endif -%}
 ```shell
 mbed import {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
@@ -52,6 +52,12 @@ Define your target and toolchain:
 cp your-custom-target/custom_targets.json . # In case of custom target
 mbed target {{cookiecutter.mbed_os_target}}
 mbed toolchain {{cookiecutter.toolchain}}
+```
+
+{% else -%}
+Enable the custom target:
+```shell
+cp {{ cookiecutter.custom_target_repo }}/custom_targets.json .
 ```
 
 {% endif -%}

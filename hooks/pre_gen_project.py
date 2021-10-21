@@ -23,12 +23,7 @@ def check_board():
 
     Dummy function, generate with Jinja2:
 
-    {% if cookiecutter.custom_target == "Zest_Core_STM32L4A6RG" %}
-        {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l4a6rg" }) }}
-        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l4a6rg.git" }) }}
-        {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L4A6RG" }) }}
-        {{ cookiecutter.update({ "jlink_device": "stm32l4a6rg" }) }}
-    {% elif cookiecutter.custom_target == "Z_Environment" %}
+    {% if cookiecutter.custom_target == "Z_Environment" %}
         {{ cookiecutter.update({ "custom_target_repo": "z-environment" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/z-environment.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L496RG" }) }}
@@ -68,14 +63,19 @@ def check_board():
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l496zg.git" }) }}
         {{ cookiecutter.update({ "mbed_os_tazget": "ZEST_CORE_STM32L496ZG" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l496zg" }) }}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32L4A6RG" %}
+        {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l4a6rg" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l4a6rg.git" }) }}
+        {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L4A6RG" }) }}
+        {{ cookiecutter.update({ "jlink_device": "stm32l4a6rg" }) }}
     {% elif cookiecutter.custom_target == "Zest_Core_STM32L562VE" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l562ve" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l562ve.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L562VE" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l562ve" }) }}
     {% else %}
-        {{ cookiecutter.update({ "custom_target_repo": "YOUR_CUSTOM_TARGET_REPO" }) }}
-        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/your-custom-target-repo.git" }) }}
+        {{ cookiecutter.update({ "custom_target_repo": "" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "YOUR_MBED_OS_TARGET" }) }}
         {{ cookiecutter.update({ "jlink_device": "YOUR_JLINK_DEVICE" }) }}
     {% endif %}
