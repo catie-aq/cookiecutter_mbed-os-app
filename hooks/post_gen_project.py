@@ -3,15 +3,17 @@ import os
 
 
 def git_init():
-    return subprocess.check_call(["git", "init"])
+    return subprocess.check_call(["git", "init"], stdout=subprocess.DEVNULL)
 
 
 def git_add_all():
-    return subprocess.check_call(["git", "add", "."])
+    return subprocess.check_call(["git", "add", "."], stdout=subprocess.DEVNULL)
 
 
 def git_commit():
-    return subprocess.check_call(["git", "commit", "-m", "Initial commit"])
+    return subprocess.check_call(
+        ["git", "commit", "-m", "Initial commit"], stdout=subprocess.DEVNULL
+    )
 
 
 def create_repository():
