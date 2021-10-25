@@ -29,7 +29,7 @@ def remove_file(filepath):
 
 
 def main():
-    if {{cookiecutter.create_repository}}:
+    if {{ cookiecutter.create_repository }}:
         create_repository()
 
     if "Not open source" == "{{ cookiecutter.open_source_license }}":
