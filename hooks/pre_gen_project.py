@@ -23,57 +23,59 @@ def check_board():
 
     Dummy function, generate with Jinja2:
 
-    {% if cookiecutter.board == "Zest_Core_STM32L4A6RG" %}
-        {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l4a6rg" }) }}
-        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l4a6rg.git" }) }}
-        {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L4A6RG" }) }}
-        {{ cookiecutter.update({ "jlink_device": "stm32l4a6rg" }) }}
-    {% elif cookiecutter.board == "Z_Environment" %}
+    {% if cookiecutter.custom_target == "Z_Environment" %}
         {{ cookiecutter.update({ "custom_target_repo": "z-environment" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/z-environment.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L496RG" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l496rg" }) }}
-    {% elif cookiecutter.board == "Z_Motion" %}
+    {% elif cookiecutter.custom_target == "Z_Motion" %}
         {{ cookiecutter.update({ "custom_target_repo": "z-motion" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/z-motion.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L496RG" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l496rg" }) }}
-    {% elif cookiecutter.board == "Zest_Core_MTXDOT" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_MTXDOT" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-mtxdot" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-mtxdot.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_MTXDOT" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l151cc" }) }}
-    {% elif cookiecutter.board == "Zest_Core_nRF52832" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_nRF52832" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-nrf52832" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-nrf52832.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "Zest_Core_nRF52832" }) }}
         {{ cookiecutter.update({ "jlink_device": "nrf52832_xxaa" }) }}
-    {% elif cookiecutter.board == "Zest_Core_STM32G474VE" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32G474VE" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32g474ve" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32g474ve.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32G474VE" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32474ve" }) }}
-    {% elif cookiecutter.board == "Zest_Core_STM32H753ZI" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32H753ZI" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32h753zi" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32h753zi.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32H753ZI" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32h753zi" }) }}
-    {% elif cookiecutter.board == "Zest_Core_STM32L496RG" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32L496RG" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l496rg" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l496rg.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L496RG" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l496rg" }) }}
-    {% elif cookiecutter.board == "Zest_Core_STM32L496ZG" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32L496ZG" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l496zg" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l496zg.git" }) }}
         {{ cookiecutter.update({ "mbed_os_tazget": "ZEST_CORE_STM32L496ZG" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l496zg" }) }}
-    {% elif cookiecutter.board == "Zest_Core_STM32L562VE" %}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32L4A6RG" %}
+        {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l4a6rg" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l4a6rg.git" }) }}
+        {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L4A6RG" }) }}
+        {{ cookiecutter.update({ "jlink_device": "stm32l4a6rg" }) }}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32L562VE" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32l562ve" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32l562ve.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L562VE" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l562ve" }) }}
     {% else %}
+        {{ cookiecutter.update({ "custom_target_repo": "" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "YOUR_MBED_OS_TARGET" }) }}
         {{ cookiecutter.update({ "jlink_device": "YOUR_JLINK_DEVICE" }) }}
     {% endif %}

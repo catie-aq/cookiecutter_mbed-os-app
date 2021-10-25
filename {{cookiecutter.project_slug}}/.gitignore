@@ -1,5 +1,7 @@
 .build
+{% if cookiecutter.custom_target == "None" -%}
 .mbed
+{% endif -%}
 projectfiles
 *.py*
 
