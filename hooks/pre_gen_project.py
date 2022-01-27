@@ -33,6 +33,11 @@ def check_board():
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/z-motion.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32L496RG" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32l496rg" }) }}
+    {% elif cookiecutter.custom_target == "Zest_Core_FMLR-72" %}
+        {{ cookiecutter.update({ "custom_target_repo": "zest-core-fmlr-72" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-fmlr-72.git" }) }}
+        {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_FMLR-72" }) }}
+        {{ cookiecutter.update({ "jlink_device": "stm32l071rz" }) }}
     {% elif cookiecutter.custom_target == "Zest_Core_MTXDOT" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-mtxdot" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-mtxdot.git" }) }}

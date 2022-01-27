@@ -37,11 +37,6 @@ Alternatively:
   ```
 
 {% if cookiecutter.custom_target == "None" -%}
-- Set Mbed project root path:
-  ```shell
-  mbed config root .
-  ```
-
 - Clone custom target repository if necessary:
   ```shell
   git clone YOUR_CUSTOM_TARGET_REPOSITORY your-custom-target

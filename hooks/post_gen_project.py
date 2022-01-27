@@ -42,6 +42,7 @@ def main():
 
     print(
         SUCCESS + "Project generated in `{{ cookiecutter.project_slug }}`" + TERMINATOR
+        SUCCESS + "Deploy, code, compile and flash!" + TERMINATOR
     )
 
 

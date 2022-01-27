@@ -11,6 +11,7 @@
       "None",
       "Z_Environment",
       "Z_Motion",
+      "Zest_Core_FMLR-72",
       "Zest_Core_MTXDOT",
       "Zest_Core_nRF52832",
       "Zest_Core_STM32G474VE",
