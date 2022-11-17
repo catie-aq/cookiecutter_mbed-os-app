@@ -53,6 +53,11 @@ def check_board():
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32g474ve.git" }) }}
         {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32G474VE" }) }}
         {{ cookiecutter.update({ "jlink_device": "stm32474ve" }) }}
+    {% elif cookiecutter.custom_target == "Zest_Core_STM32H743ZG" %}
+        {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32h743zg" }) }}
+        {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32h743zg.git" }) }}
+        {{ cookiecutter.update({ "mbed_os_target": "ZEST_CORE_STM32H743ZG" }) }}
+        {{ cookiecutter.update({ "jlink_device": "stm32h743zg" }) }}
     {% elif cookiecutter.custom_target == "Zest_Core_STM32H753ZI" %}
         {{ cookiecutter.update({ "custom_target_repo": "zest-core-stm32h753zi" }) }}
         {{ cookiecutter.update({ "custom_target_repo_url": "https://gitlab.com/catie_6tron/zest-core-stm32h753zi.git" }) }}
