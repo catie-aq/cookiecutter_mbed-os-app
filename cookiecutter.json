@@ -15,6 +15,7 @@
       "Zest_Core_MTXDOT",
       "Zest_Core_nRF52832",
       "Zest_Core_STM32G474VE",
+      "Zest_Core_STM32H743ZG",
       "Zest_Core_STM32H753ZI",
       "Zest_Core_STM32L496RG",
       "Zest_Core_STM32L496ZG",
