@@ -13,7 +13,7 @@ pip install --user cookiecutter
 Generate a new Mbed OS application from template:
 
 ```shell
-cookiecutter gl:catie_6tron/cookiecutter-mbed-os-app
+cookiecutter gh:catie-aq/cookiecutter_mbed-os-app
 ```
 
 ## Template variables
