@@ -48,7 +48,7 @@ Alternatively:
 
 {% if cookiecutter.custom_target == "None" -%}
 
-- If necessayr, eg using a 6TRON Zest Core, clone the custom target repository:
+- If necessary, eg using a 6TRON Zest Core, clone the custom target repository:
   
   ```shell
   git clone YOUR_CUSTOM_TARGET_REPOSITORY your-custom-target
