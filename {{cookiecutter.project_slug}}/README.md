@@ -19,6 +19,8 @@ imported by `mbed deploy` or `mbed import`):
 
 ## Usage
 
+This repository use MbedOS as RTOS framework. While next steps describes how to use Mbed CLI 1 commands to setup the project, it is highly recommended that users read [MbedOS official documentation](https://os.mbed.com/docs/mbed-os/v6.16/build-tools/create.html). 
+
 {% if cookiecutter.custom_target == "None" -%}
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
 target and toolchain definition:
