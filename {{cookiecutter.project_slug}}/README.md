@@ -99,7 +99,9 @@ mbed compile
 ```
 
 Program the target device with a Segger J-Link debug probe and
-[`sixtron_flash`](https://github.com/catie-aq/6tron_flash) tool:
+
+[`sixtron_flash`](https://github.com/catie-aq/6tron-flash) tool:
+
 ```shell
 sixtron_flash
 ```
