@@ -101,7 +101,7 @@ mbed compile
 Program the target device with a Segger J-Link debug probe and
 [`sixtron_flash`](https://github.com/catie-aq/6tron_flash) tool:
 ```shell
-sixtron_flash {{cookiecutter.__jlink_device}} BUILD/{{cookiecutter.__mbed_os_target}}/{{cookiecutter.toolchain}}/{{cookiecutter.project_slug}}.elf
+sixtron_flash
 ```
 
 Debug on the target device with the probe and Segger
