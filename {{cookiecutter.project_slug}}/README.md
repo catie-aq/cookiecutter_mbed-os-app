@@ -19,7 +19,7 @@ imported by `mbed deploy` or `mbed import`):
 
 ## Usage
 
-This repository use MbedOS as RTOS framework. While next steps describes how to use Mbed CLI 1 commands to setup the project, it is highly recommended that users read [MbedOS official documentation](https://os.mbed.com/docs/mbed-os/v6.16/build-tools/create.html). 
+This repository use MbedOS as RTOS framework. While next steps describes how to use Mbed CLI 1 commands to setup the project, it is highly recommended that users read [MbedOS official documentation](https://os.mbed.com/docs/mbed-os/v6.16/build-tools/create.html).
 
 {% if cookiecutter.custom_target == "None" -%}
 To clone **and** deploy the project in one command, use `mbed import` and skip to the
@@ -36,14 +36,14 @@ mbed import {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
 Alternatively:
 
 - Clone to "{{cookiecutter.project_slug}}" and enter it:
-  
+
   ```shell
   git clone {{cookiecutter.git_url}} {{cookiecutter.project_slug}}
   cd {{cookiecutter.project_slug}}
   ```
 
 - Deploy software requirements with:
-  
+
   ```shell
   mbed deploy
   ```
@@ -51,20 +51,20 @@ Alternatively:
 {% if cookiecutter.custom_target == "None" -%}
 
 - If necessary, eg using a 6TRON Zest Core, clone the custom target repository:
-  
+
   ```shell
   git clone YOUR_CUSTOM_TARGET_REPOSITORY your-custom-target
   ```
 * ... and enable the custom target:
-  
+
   * Linux:
-    
+
     ```shell
     cp your-custom-target/custom_targets.json .
     ```
-  
+
   * Windows:
-    
+
     ```shell
     copy your-custom-target\custom_targets.json .
     ```
@@ -81,13 +81,13 @@ mbed toolchain {{cookiecutter.toolchain}}
 Enable the custom target:
 
 * Linux:
-  
+
   ```shell
   cp {{ cookiecutter.__custom_target_repo }}/custom_targets.json .
   ```
 
 * Windows:
-  
+
   ```shell
   copy {{ cookiecutter.__custom_target_repo }}\custom_targets.json .
   ```
@@ -108,6 +108,4 @@ Program the target device with a Segger J-Link debug probe and
 sixtron_flash
 ```
 
-Debug on the target device with the probe and Segger
-[Ozone](https://www.segger.com/products/development-tools/ozone-j-link-debugger)
-software.
+Debug on the target device with the probe and Segger [Ozone](https://www.segger.com/products/development-tools/ozone-j-link-debugger) software.
