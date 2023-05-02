@@ -55,19 +55,7 @@ Alternatively:
   ```shell
   git clone YOUR_CUSTOM_TARGET_REPOSITORY your-custom-target
   ```
-* ... and enable the custom target:
-
-  * Linux:
-
-    ```shell
-    cp your-custom-target/custom_targets.json .
-    ```
-
-  * Windows:
-
-    ```shell
-    copy your-custom-target\custom_targets.json .
-    ```
+* ... and enable the custom target by copying `custom_targets.json` from the custom target folder into the root of your project.
 
 Define your target and toolchain:
 
