@@ -20,7 +20,7 @@ cookiecutter gh:catie-aq/cookiecutter_mbed-os-app
 - `project_name`: name of the project
 - `project_short_description`: one-line description of the project
 - `project_slug`: GitHub project slug as in https://github.com/catie-aq/project_slug
-- `git_url`: GitHub URL as in https://github.com/project_namespace/project_slug.git
+- `git_url`: GitHub URL as in https://github.com/catie-aq/project_slug.git
 - `copyright_holder`: copyright holder used in headers
 - `copyright_year`: copyright year used in headers
 - `open_source_license`: project license
