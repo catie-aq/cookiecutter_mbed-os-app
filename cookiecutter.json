@@ -1,11 +1,8 @@
 {
    "project_name": "Name of the project",
-   "test_var": "{{ cookiecutter.project_name | bigup }}",
-   "second_test_var": "{{ cookiecutter.project_name | lowdown }}",
    "project_short_description": "A short description of the project.",
    "project_slug": "{{ cookiecutter.project_name | slugify }}",
-   "project_namespace": "catie_6tron",
-   "git_url": "https://gitlab.com/{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}.git",
+   "git_url": "https://github.com/catie-aq/{{cookiecutter.project_slug}}.git",
    "copyright_holder": "CATIE",
    "copyright_year": "{% now 'utc', '%Y' %}",
    "open_source_license": ["Apache Software License 2.0", "Not open source"],
@@ -20,7 +17,6 @@
       "Zest_Core_STM32H743ZG",
       "Zest_Core_STM32H753ZI",
       "Zest_Core_STM32L496RG",
-      "Zest_Core_STM32L496ZG",
       "Zest_Core_STM32L4A6RG",
       "Zest_Core_STM32L562VE"
    ],

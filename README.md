@@ -19,9 +19,8 @@ cookiecutter gh:catie-aq/cookiecutter_mbed-os-app
 ## Template variables
 - `project_name`: name of the project
 - `project_short_description`: one-line description of the project
-- `project_slug`: GitLab project slug as in https://gitlab.com/project_namespace/project_slug
-- `project_namespace`: GitLab project namespace as in https://gitlab.com/project_namespace/project_slug
-- `git_url`: GitLab URL as in https://gitlab.com/project_namespace/project_slug.git
+- `project_slug`: GitHub project slug as in https://github.com/catie-aq/project_slug
+- `git_url`: GitHub URL as in https://github.com/project_namespace/project_slug.git
 - `copyright_holder`: copyright holder used in headers
 - `copyright_year`: copyright year used in headers
 - `open_source_license`: project license
