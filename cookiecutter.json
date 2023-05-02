@@ -1,7 +1,9 @@
 {
    "project_name": "Name of the project",
+   "test_var": "{{ cookiecutter.project_name | bigup }}",
+   "second_test_var": "{{ cookiecutter.project_name | lowdown }}",
    "project_short_description": "A short description of the project.",
-   "project_slug": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+   "project_slug": "{{ cookiecutter.project_name | slugify }}",
    "project_namespace": "catie_6tron",
    "git_url": "https://gitlab.com/{{cookiecutter.project_namespace}}/{{cookiecutter.project_slug}}.git",
    "copyright_holder": "CATIE",
@@ -22,12 +24,17 @@
       "Zest_Core_STM32L4A6RG",
       "Zest_Core_STM32L562VE"
    ],
+   "_custom_target_repo": "{{ cookiecutter.custom_target | custom_target_repo }}",
+   "_custom_target_repo_url": "{{ cookiecutter.custom_target | custom_target_repo_url }}",
+   "_mbed_os_target": "{{ cookiecutter.custom_target | mbed_os_target }}",
+   "_jlink_device": "{{ cookiecutter.custom_target | jlink_device }}",
    "toolchain": "GCC_ARM",
    "create_repository": [
       true,
       false
    ],
    "_extensions": [
-      "jinja2_time.TimeExtension"
+      "jinja2_time.TimeExtension",
+      "local_extensions.CustomTargetExtension"
    ]
 }
