@@ -20,6 +20,10 @@
       "Zest_Core_STM32L4A6RG",
       "Zest_Core_STM32L562VE"
    ],
+   "__custom_target_repo": "{{ cookiecutter.custom_target | custom_target_repo }}",
+   "__custom_target_repo_url": "{{ cookiecutter.custom_target | custom_target_repo_url }}",
+   "__mbed_os_target": "{{ cookiecutter.custom_target | mbed_os_target }}",
+   "__jlink_device": "{{ cookiecutter.custom_target | jlink_device }}",
    "toolchain": "GCC_ARM",
    "create_repository": [
       true,
