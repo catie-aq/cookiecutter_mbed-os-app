@@ -45,14 +45,14 @@ Alternatively:
 Define your target and toolchain:
 ```shell
 cp your-custom-target/custom_targets.json . # In case of custom target
-mbed target {{cookiecutter._mbed_os_target}}
+mbed target {{cookiecutter.custom_target|mbed_os_target}}
 mbed toolchain {{cookiecutter.toolchain}}
 ```
 
 {% else -%}
 Enable the custom target:
 ```shell
-cp {{ cookiecutter._custom_target_repo }}/custom_targets.json .
+cp {{ cookiecutter.custom_target|custom_target_repo }}/custom_targets.json .
 ```
 
 {% endif -%}
@@ -65,7 +65,7 @@ mbed compile
 Program the target device with a Segger J-Link debug probe and
 [`sixtron_flash`](https://github.com/catie-aq/6tron_flash) tool:
 ```shell
-sixtron_flash {{cookiecutter._jlink_device}} BUILD/{{cookiecutter._mbed_os_target}}/{{cookiecutter.toolchain}}/{{cookiecutter.project_slug}}.elf
+sixtron_flash {{cookiecutter.custom_target|jlink_device}} BUILD/{{cookiecutter.custom_target|mbed_os_target}}/{{cookiecutter.toolchain}}/{{cookiecutter.project_slug}}.elf
 ```
 
 Debug on the target device with the probe and Segger
