@@ -4,7 +4,7 @@
 
 ## Requirements
 
-Install `cookiecutter` from the command line with [pipx](https://pypa.github.io/pipx/):
+Install Cookiecutter from the command line with [pipx](https://pypa.github.io/pipx/):
 
 ```shell
 pipx install cookiecutter
