@@ -1,15 +1,17 @@
 # Cookiecutter Mbed OS Application
-[Cookiecutter](https://github.com/audreyr/cookiecutter) template for a Mbed OS
-application.
+
+[Cookiecutter](https://github.com/audreyr/cookiecutter) template for an Mbed OS application.
 
 ## Requirements
-Install `cookiecutter` from the command line:
+
+Install `cookiecutter` from the command line with [pipx](https://pypa.github.io/pipx/):
 
 ```shell
-pip install --user cookiecutter
+pipx install cookiecutter
 ```
 
 ## Usage
+
 Generate a new Mbed OS application from template:
 
 ```shell
@@ -17,6 +19,7 @@ cookiecutter gh:catie-aq/cookiecutter_mbed-os-app
 ```
 
 ## Template variables
+
 - `project_name`: name of the project
 - `project_short_description`: one-line description of the project
 - `project_slug`: GitHub project slug as in https://github.com/catie-aq/project_slug
